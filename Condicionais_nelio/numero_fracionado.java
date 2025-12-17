@@ -3,7 +3,7 @@
 // (powered by FernFlower decompiler)
 //
 
-package Atividade01_nelio;
+package Condicionais_nelio;
 
 import java.util.Locale;
 
