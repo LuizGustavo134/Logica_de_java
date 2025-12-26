@@ -13,6 +13,6 @@ public class Soma {
         int num2 = scan.nextInt();
         scan.nextLine();
 
-        System.out.println("A soma é "+ (num1+num2));
+        System.out.println("A soma de "+num1+ " + " +num2 + " é: "+ (num1+num2));
     }
 }
