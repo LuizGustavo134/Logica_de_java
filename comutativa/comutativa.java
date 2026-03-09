@@ -18,7 +18,7 @@ public class comutativa {
         if ( minutos >= conta){
             // += é operador cumulativo
             conta += conta + (minutos - conta) * 2;
-            System.out.printf("preço finsl é = %.2f%n",conta);
+            System.out.printf("preço final é = %.2f%n",conta);
         }
 
     }
