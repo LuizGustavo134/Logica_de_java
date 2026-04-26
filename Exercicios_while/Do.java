@@ -17,7 +17,7 @@ public class Do {
 
             System.out.println("deseja repetir?");
             resposta = scan.nextLine();
-            
+
 
         }while (!resposta.equals("nao"));
         /* USE equals pra comparar strings ou
