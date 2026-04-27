@@ -1,5 +1,7 @@
 package Exercicios_while;
 import java.util.Scanner;
+import java.util.function.Function;
+
 public class Do {
     public static void main (String[]args){
         Scanner scan = new Scanner(System.in);
@@ -17,6 +19,7 @@ public class Do {
 
             System.out.println("deseja repetir?");
             resposta = scan.nextLine();
+
 
 
         }while (!resposta.equals("nao"));
