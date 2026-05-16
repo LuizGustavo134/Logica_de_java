@@ -21,7 +21,7 @@ public class main {
 
         System.out.println(produtc);
         System.out.println();
-        //No contexto de UM Sout não é nece ssário
+        //No contexto de Um Sout não é necessário
         // especificar o product pq só existe um metodo definido
 
         System.out.println("How much Units would you want to Add? ");

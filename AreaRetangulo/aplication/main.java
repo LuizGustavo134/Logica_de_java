@@ -8,12 +8,12 @@ public class main {
     public static void main(String[]args){
         Scanner scan = new Scanner(System.in);
         Retangulo retangulo= new Retangulo();
-        System.out.println("Entre com Altura do triangulo: ");
-        retangulo.altura = scan.nextInt();
+        System.out.println("Enter Rectangle's height: ");
+        retangulo.height = scan.nextInt();
         scan.nextLine();
 
-        System.out.println("Entre com a Largura do triangulo");
-        retangulo.largura= scan.nextInt();
+        System.out.println("Enter Rectangle's width: ");
+        retangulo.width= scan.nextInt();
         scan.nextLine();
 
         System.out.println();

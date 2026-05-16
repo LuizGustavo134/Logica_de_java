@@ -1,29 +1,29 @@
 package AreaRetangulo.entities;
 
 public class Retangulo {
-    public int altura;
-    public int largura;
+    public int height;
+    public int width;
 
     public double Area(){
-         return (altura * largura);
+         return (height * width);
     }
-    public double perimetro(){
-        return 2 * (altura + largura);
+    public double perimeter(){
+        return 2 * (height + width);
     }
     public double diagonal(){
-        return Math.sqrt((altura * altura) + (largura * largura));
+        return Math.sqrt((height * height) + (width * width));
     }
     public String toString(){
         return "Area: " +
                 String.format("%.2f",Area())
                 + " ,"
-                +" Perimetro: "
-                + String.format("%.2f",perimetro())
+                +" Perimeter: "
+                + String.format("%.2f",perimeter())
                 +" Diagonal: "
                 +" A²= "
-                +altura
+                +height
                 +" B² = "
-                +largura
+                +width
                 + " =d² "
                 +String.format("%.2f",diagonal());
 
