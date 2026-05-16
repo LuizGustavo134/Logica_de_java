@@ -30,19 +30,11 @@ public class main {
         System.out.println();
         System.out.println("Update data sucesfuly");
         System.out.println(produtc);
-
         System.out.println();
-        System.out.println("Wanna remove some produtcs?");
-        String r1 = scan.nextLine();
-        scan.nextLine();
-        // erro
-        if (r1.equalsIgnoreCase("sim")){
-            System.out.println("How much do you want to be removed?");
-            quantity = scan.nextInt();
-            produtc.RemoveProducts(quantity);
-        System.out.println(produtc);}
-
-
+        System.out.println("How much do you want to be removed?");
+        quantity = scan.nextInt();
+        produtc.RemoveProducts(quantity);
+        System.out.println(produtc);
         scan.close();
     }
 }
