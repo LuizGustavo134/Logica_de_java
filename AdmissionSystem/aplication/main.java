@@ -9,26 +9,22 @@ public class main {
         int MX = 1;
         do {
             System.out.println("Welcome to Admission Sytem what do want to do?");
-            System.out.println("(1) ADD/ remove employer (2) Maneger paymant (3) See employers " +
+            System.out.println("(1) ADD employer (2) Maneger paymant (3) See employer " +
                     "(4) exit");
                     int option = scan.nextInt();
                     scan.nextLine();
                     if (option == 1){
-                        System.out.println("new employer? S/N");
-                        char resp = scan.next().charAt(0);
-                        scan.nextLine();
-
-                    if (resp == 's' || resp == 'S'){
                      System.out.println("enter with the name: ");
                      worker.name =scan.nextLine();
                      System.out.println("Enter with the Job Function: ");
                      worker.job = scan.nextLine();
                      System.out.println("enter with the salary: ");
-                     worker.salary = scan.nextInt();
+                     worker.Glossalary = scan.nextInt();
                      scan.nextLine();
+                     worker.salaryTribute();
                         System.out.println("Employer Added");
                         System.out.println();
-                    }
+
                     } else if (option == 2) {
                         System.out.println(worker);
                         System.out.println("What do you want to do?");
@@ -37,7 +33,7 @@ public class main {
                         scan.nextLine();
                         if (r1 == 1){
                             System.out.println("enter with the salary: ");
-                            worker.salary = scan.nextInt();
+                            worker.Glossalary = scan.nextInt();
                             scan.nextLine();
                             System.out.println("Operation sucessfuly");
                         } else if (r1== 2) {
@@ -51,7 +47,9 @@ public class main {
 
 
                     } else if (option == 3) {
+                        System.out.println();
                         System.out.println(worker);
+                        System.out.println();
 
                     } else if (option ==4) {
                         MX += MX+1;
