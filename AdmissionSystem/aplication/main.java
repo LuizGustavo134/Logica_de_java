@@ -1,9 +1,11 @@
 package AdmissionSystem.aplication;
-
+import java.util.Date;
+import java.util.Locale;
 import java.util.Scanner;
 import AdmissionSystem.entities.employer;
 public class main {
     public static void main(String[]args){
+        Locale.setDefault(Locale.US);
         Scanner scan = new Scanner(System.in);
         employer worker = new employer();
         int MX = 1;
@@ -38,9 +40,9 @@ public class main {
                             System.out.println("Operation sucessfuly");
                         } else if (r1== 2) {
                             System.out.println("which porcentage to Increase? ");
-                            worker.increase= scan.nextInt();
+                            double percentage= scan.nextDouble();
                             scan.nextLine();
-                            worker.increaseSalary();
+                            worker.increaseSalary(percentage);
                             System.out.println("opration sucessfully");
 
                         }
