@@ -7,15 +7,16 @@ public class Main {
         Locale.setDefault(Locale.US);
         Scanner scan = new Scanner(System.in);
         Student student = new Student();
-        System.out.println("enter the with the notes: ");
+        System.out.println("enter the with the Name and notes: ");
+        student.name = scan.nextLine();
         student.note1 = scan.nextDouble();
         scan.nextLine();
         student.note2 = scan.nextDouble();
         scan.nextLine();
         student.note3 = scan.nextDouble();
         scan.nextLine();
-        System.out.println();
-        System.out.println(student.toString());
+        System.out.println(student);
+        scan.close();
 
     }
 }
