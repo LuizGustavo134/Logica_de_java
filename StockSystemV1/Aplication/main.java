@@ -1,5 +1,5 @@
-package StockSystem.Aplication;
-import StockSystem.entities.Produtc;
+package StockSystemV1.Aplication;
+import StockSystemV1.entities.Product;
 import java.util.Locale;
 import java.util.Scanner;
 
@@ -8,7 +8,7 @@ public class main {
         Locale.setDefault(Locale.US);
         Scanner scan = new Scanner(System.in);
 
-        Produtc produtc = new Produtc();
+        Product produtc = new Product();
         System.out.println("enter the product data");
         System.out.println("Name: ");
         produtc.name = scan.nextLine();
@@ -22,7 +22,7 @@ public class main {
         System.out.println(produtc);
         System.out.println();
         //No contexto de Um Sout não é necessário
-        // especificar o product pq só existe um metodo definido
+        // especificar o product o ToString é chamado automaticamente
 
         System.out.println("How much Units would you want to Add? ");
         int quantity = scan.nextInt();
