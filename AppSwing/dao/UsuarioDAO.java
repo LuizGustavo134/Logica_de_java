@@ -1,4 +1,4 @@
-package dao;
+package AppSwing.dao;
 
 import model.Usuario;
 import java.sql.Connection;
